@@ -83,7 +83,7 @@ gcc -o word_processor word_processor_main.c -std=c99
 
 Given the subset word "vent" and parent words like "adventure", "event", "prevent", the program will:
 1. Check if 'v', 'e', 'n', 't' appear in sequence in each word
-2. Identify matches: "adventure" contains v-e-n-t in sequence (ad-**v**-**e**-nture with **n** and **t** following)
+2. Identify matches: "adventure" contains v-e-n-t in sequence (ad-**v**-**e**-**n**-**t**-ure)
 3. Display all parent words with their lengths
 4. Show the total count of unique parent words
 
@@ -101,7 +101,7 @@ Total Parent Words: 2
 
 - **Language**: C (C99 standard)
 - **Word Length Range**: 4-12 characters
-- **Maximum Words**: 1000 words can be processed from each input file (both text file and CSV)
+- **Maximum Words**: Up to 1000 words from the text file and up to 1000 subset words from the CSV file
 - **Data Structure**: Array of linked lists for efficient word organization
 - **Character Validation**: Only alphabetic characters are processed
 
