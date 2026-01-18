@@ -88,9 +88,11 @@ cp "../Source Files/project_text.txt" .
 cp "../Source Files/project5_data.csv" .
 ./word_processor_main
 
-# Option 2: Run from Project5 root and specify relative paths
+# Option 2: Copy files to Project5 root and run from there
 cd ..
-./Code\ Files/word_processor_main
+cp "Source Files/project_text.txt" .
+cp "Source Files/project5_data.csv" .
+"./Code Files/word_processor_main"
 ```
 Note: You may need to modify the file paths in the code if running from different directories.
 
