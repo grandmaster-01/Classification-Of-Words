@@ -74,16 +74,25 @@ cd Project5
 ```
 
 ### Compilation
+Navigate to the Code Files directory and compile:
 ```bash
-gcc "Code Files/word_processor_main.c" -o word_processor_main
+cd "Code Files"
+gcc word_processor_main.c -o word_processor_main
 ```
 
 ### Execution
-Ensure you're in the Project5 directory with access to the Source Files, then run:
+The program expects input files in the current directory. Copy them from Source Files or run from the Project5 root:
 ```bash
+# Option 1: Copy files to Code Files directory
+cp "../Source Files/project_text.txt" .
+cp "../Source Files/project5_data.csv" .
 ./word_processor_main
+
+# Option 2: Run from Project5 root and specify relative paths
+cd ..
+./Code\ Files/word_processor_main
 ```
-Note: The program expects `project_text.txt` and `project5_data.csv` to be in the current directory or adjust the paths in the code.
+Note: You may need to modify the file paths in the code if running from different directories.
 
 ### Expected Output
 The program displays:
