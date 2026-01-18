@@ -66,16 +66,24 @@ The program uses a sequential character matching algorithm where:
 - C compiler (GCC, MinGW, or similar)
 - Text editor or IDE
 
+### Setup
+First, extract the `Classification Of Words.zip` file to access the project files:
+```bash
+unzip "Classification Of Words.zip"
+cd Project5
+```
+
 ### Compilation
 ```bash
-gcc word_processor_main.c -o word_processor_main
+gcc "Code Files/word_processor_main.c" -o word_processor_main
 ```
 
 ### Execution
-Ensure `project_text.txt` and `project5_data.csv` are in the same directory, then run:
+Ensure you're in the Project5 directory with access to the Source Files, then run:
 ```bash
 ./word_processor_main
 ```
+Note: The program expects `project_text.txt` and `project5_data.csv` to be in the current directory or adjust the paths in the code.
 
 ### Expected Output
 The program displays:
@@ -96,10 +104,12 @@ Total Parent Words: 3
 ```
 
 ## Configuration
-Key constants defined in `word_processor.h`:
+Key constants are defined in `word_processor.h` (found inside the zip file):
 - `MAX_WORD_LENGTH`: 12 characters
 - `MIN_WORD_LENGTH`: 4 characters
 - `MAX_WORDS`: 1000 words
+
+To modify these settings, extract the zip file, edit `word_processor.h`, and recompile.
 
 ## Technologies
 - **Language**: C
@@ -107,5 +117,5 @@ Key constants defined in `word_processor.h`:
 - **File I/O**: Text files (.txt) and CSV files (.csv)
 - **Memory Management**: Dynamic allocation with malloc/free
 
-## Author
-Data Structures and Algorithms Project
+## Project Type
+Data Structures and Algorithms (DSA) course project focusing on linked lists, file I/O, and string processing algorithms.
