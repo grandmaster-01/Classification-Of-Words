@@ -1,0 +1,75 @@
+
+Subset Words and their Parent Words:
+
+Subset: vent (length: 4)
+  - Parent: Adventure (length: 9)
+Total Parent Words: 1
+
+Subset: be (length: 2)
+  - Parent: been (length: 4)
+  - Parent: before (length: 6)
+  - Parent: behind (length: 6)
+  - Parent: bundle (length: 6)
+  - Parent: oblige (length: 6)
+  - Parent: problem (length: 7)
+  - Parent: rambled (length: 7)
+  - Parent: breadth (length: 7)
+  - Parent: breakfast (length: 9)
+  - Parent: absolutely (length: 10)
+Total Parent Words: 10
+
+Subset: lack (length: 4)
+  - Parent: black (length: 5)
+Total Parent Words: 1
+
+Subset: read (length: 4)
+  - Parent: breadth (length: 7)
+  - Parent: already (length: 7)
+Total Parent Words: 2
+
+Subset: fast (length: 4)
+  - Parent: breakfast (length: 9)
+Total Parent Words: 1
+
+Subset: break (length: 5)
+  - Parent: breakfast (length: 9)
+Total Parent Words: 1
+
+Subset: ing (length: 3)
+  - Parent: flying (length: 6)
+  - Parent: Reading (length: 7)
+  - Parent: setting (length: 7)
+  - Parent: bringing (length: 8)
+  - Parent: singular (length: 8)
+  - Parent: charging (length: 8)
+  - Parent: recharging (length: 10)
+Total Parent Words: 7
+
+Subset: charge (length: 6)
+Total Parent Words: 0
+
+Subset: lent (length: 4)
+  - Parent: silent (length: 6)
+  - Parent: length (length: 6)
+  - Parent: excellent (length: 9)
+Total Parent Words: 3
+
+Subset: favour (length: 6)
+  - Parent: favour (length: 6)
+  - Parent: favourite (length: 9)
+Total Parent Words: 2
+
+Subset: my (length: 2)
+  - Parent: myself (length: 6)
+Total Parent Words: 1
+
+Subset: pro (length: 3)
+  - Parent: promise (length: 7)
+  - Parent: problem (length: 7)
+  - Parent: procured (length: 8)
+Total Parent Words: 3
+
+Subset: char (length: 4)
+  - Parent: charging (length: 8)
+  - Parent: recharging (length: 10)
+Total Parent Words: 2
