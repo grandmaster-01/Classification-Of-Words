@@ -3,6 +3,8 @@
 ## Project Overview
 This repository contains **Project 5: Word Classification and Parent Word Identification** - a C programming project that implements a word processing system to classify words by length and identify parent-child word relationships.
 
+> **📄 Looking for resume summaries?** Check out [PROJECT_SUMMARY.md](PROJECT_SUMMARY.md) for professionally-crafted project descriptions in multiple formats (one-liners, bullet points, LinkedIn summaries, interview talking points, and more)!
+
 ## What's in the Zip File?
 The `Classification Of Words.zip` file contains:
 
