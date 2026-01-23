@@ -220,4 +220,19 @@ Focus on: Problem-solving, clean code, modular design, debugging skills
 
 ---
 
-**Note**: Replace `[Month Year]` with your actual project completion date. Adjust metrics and details based on your specific implementation if you made modifications to the codebase.
+## 📌 Important Notes
+
+**Date Placeholder**: Replace `[Month Year]` throughout this document with your actual project completion date.
+
+**Keeping Metrics Current**: The technical metrics in this document (line count: 260, word capacity: 1000+, etc.) are based on the current state of the codebase. If you make modifications to the code:
+- Update the line count if you add/remove significant code
+- Verify complexity notations still accurately describe your algorithms
+- Update feature descriptions to match any new functionality
+- Review all technical claims to ensure accuracy
+
+**Verification Command**: To verify the current line count, run:
+```bash
+wc -l word_processor_main.c word_processor.h
+```
+
+Current breakdown: 232 lines (main) + 28 lines (header) = 260 total lines
