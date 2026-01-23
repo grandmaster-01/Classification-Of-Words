@@ -236,3 +236,175 @@ wc -l word_processor_main.c word_processor.h
 ```
 
 Current breakdown: 232 lines (main) + 28 lines (header) = 260 total lines
+
+---
+---
+
+# 🎭 Sentiment Analysis Project - Resume Bullet Points
+
+## Project: Comparative Analysis of Machine Learning and Deep Learning for Sentiment Classification
+
+Below are professional resume bullet points for the **Sentiment Analysis of Google Reviews** project, formatted in the same style as the Classification of Words project above.
+
+---
+
+## 💼 Resume Bullet Points for Sentiment Analysis Project
+
+### Machine Learning & Data Science Focus:
+- **Developed comparative sentiment analysis system** implementing 6 machine learning and deep learning models (Logistic Regression, SVM, Random Forest, XGBoost, Naïve Bayes, Bi-LSTM) to classify 10,700+ Google Play Store reviews with 84.79% peak accuracy
+- **Engineered feature extraction pipeline** using TF-IDF vectorization and Word2Vec embeddings (CBOW and Skip-gram), integrating custom sentiment lexicons (HowNet, NTUSD, iSGoPaSD) to enhance model performance
+- **Built end-to-end ML pipeline** including web scraping, data preprocessing (HTML tag removal, text normalization), feature engineering, model training, and comprehensive evaluation using accuracy, precision, recall, F1-score, and ROC-AUC metrics
+- **Implemented deep learning architecture** using Keras Bi-LSTM with word embeddings, achieving 84.58% accuracy and 0.93 AUC score, demonstrating proficiency in sequential neural networks
+
+### Data Engineering & Preprocessing Focus:
+- **Designed robust data preprocessing pipeline** handling 10,700+ user reviews with text cleaning, HTML tag removal, normalization, and custom sentiment dictionary integration for enhanced feature representation
+- **Implemented web scraping system** to collect and process Google Play Store reviews, building a comprehensive dataset for sentiment classification research
+- **Engineered multiple embedding strategies** comparing TF-IDF, Word2Vec CBOW, and Skip-gram methods to optimize feature representation for sentiment analysis tasks
+- **Created automated data validation system** ensuring data quality through duplicate removal, null handling, and text sanitization processes
+
+### Research & Analysis Focus:
+- **Conducted comprehensive comparative analysis** of traditional ML vs. deep learning approaches, systematically evaluating 6 models across multiple performance metrics to identify optimal sentiment classification strategies
+- **Published research findings** demonstrating Logistic Regression achieved highest accuracy (84.79%, 0.92 AUC) while Bi-LSTM excelled in AUC score (0.93), providing actionable insights for model selection in NLP tasks
+- **Optimized model performance** through hyperparameter tuning and sampling strategy evaluation, achieving competitive results across all models within 1-2% accuracy range
+- **Contributed to academic knowledge** by documenting methodology, results, and comparative analysis in research paper format for MSC Data Science program
+
+### Software Engineering & Python Focus:
+- **Developed production-ready Python implementation** using Jupyter Notebook with scikit-learn, Keras, TensorFlow, pandas, and NLTK for scalable sentiment analysis solution
+- **Implemented model comparison framework** with standardized evaluation metrics enabling systematic assessment of ML and DL approaches on consistent dataset
+- **Built reusable NLP components** including text preprocessors, feature extractors, and model evaluators following software engineering best practices and modular design patterns
+- **Designed comprehensive visualization system** for model performance comparison using matplotlib/seaborn, enabling clear communication of research findings
+
+### Technical Leadership & Project Management Focus:
+- **Led end-to-end machine learning project** from problem definition through data collection, model development, evaluation, and documentation, delivering research-quality results
+- **Integrated multiple ML frameworks** (scikit-learn for traditional ML, Keras/TensorFlow for deep learning) demonstrating versatility across different technology stacks
+- **Documented complete methodology** including data collection, preprocessing steps, feature engineering approaches, and evaluation metrics for reproducibility and knowledge transfer
+- **Balanced model accuracy and complexity** by comparing lightweight models (Logistic Regression) with complex architectures (Bi-LSTM), making informed trade-off decisions
+
+---
+
+## 🎯 Short Summary (2-3 Sentences) - Sentiment Analysis
+
+Developed a comprehensive sentiment analysis system comparing 6 machine learning and deep learning models on 10,700+ Google Play Store reviews, achieving 84.79% peak accuracy with Logistic Regression. Implemented complete data pipeline including web scraping, preprocessing, TF-IDF/Word2Vec feature extraction, and integrated custom sentiment lexicons (HowNet, NTUSD, iSGoPaSD) to enhance model performance. Conducted systematic evaluation across accuracy, precision, recall, F1-score, and ROC-AUC metrics, demonstrating both traditional ML and modern deep learning approaches (Bi-LSTM) perform competitively on sentiment classification tasks.
+
+---
+
+## 📝 Detailed Summary (Paragraph Format) - Sentiment Analysis
+
+Engineered a comprehensive sentiment classification system that performs comparative analysis of traditional machine learning and modern deep learning approaches on Google Play Store user reviews. The project involved building an end-to-end data science pipeline starting with web scraping to collect 10,700+ reviews, followed by extensive preprocessing including HTML tag removal, text normalization, and data cleaning. Implemented multiple feature engineering strategies including TF-IDF vectorization and Word2Vec embeddings (both CBOW and Skip-gram variants), enhanced with custom sentiment lexicons from HowNet, NTUSD, and iSGoPaSD dictionaries. Developed and systematically evaluated six models spanning classical machine learning (Logistic Regression, SVM, Random Forest, XGBoost, Naïve Bayes) and deep learning (Bi-LSTM with Keras), with Logistic Regression achieving the highest accuracy of 84.79% and 0.92 AUC score while Bi-LSTM achieved 84.58% accuracy with 0.93 AUC. The project demonstrates strong proficiency in Python (scikit-learn, Keras, TensorFlow, pandas, NLTK), NLP techniques, model evaluation, and research methodology, with findings documented in academic research paper format. Key achievements include building reusable ML components, implementing multiple embedding strategies, conducting rigorous comparative analysis, and demonstrating that traditional ML models can match or exceed deep learning performance on sentiment classification tasks when properly engineered.
+
+---
+
+## 📊 Key Metrics & Achievements - Sentiment Analysis
+
+- ✅ **10,700+ reviews processed** from Google Play Store
+- ✅ **6 models implemented**: Logistic Regression, SVM, Random Forest, XGBoost, Naïve Bayes, Bi-LSTM
+- ✅ **84.79% peak accuracy** achieved with Logistic Regression
+- ✅ **0.93 AUC score** (highest) with Bi-LSTM deep learning model
+- ✅ **3 sentiment lexicons integrated**: HowNet, NTUSD, iSGoPaSD
+- ✅ **Multiple embeddings evaluated**: TF-IDF, Word2Vec CBOW, Word2Vec Skip-gram
+- ✅ **5+ evaluation metrics**: Accuracy, Precision, Recall, F1-Score, ROC-AUC
+- ✅ **Research paper quality documentation** with comprehensive methodology
+
+---
+
+## 🔧 Technologies & Tools - Sentiment Analysis
+
+- **Languages**: Python
+- **ML Libraries**: scikit-learn, XGBoost
+- **Deep Learning**: Keras, TensorFlow
+- **NLP**: NLTK, Word2Vec, TF-IDF
+- **Data Processing**: pandas, NumPy
+- **Visualization**: matplotlib, seaborn
+- **Development**: Jupyter Notebook
+- **Techniques**: Web scraping, Text preprocessing, Feature engineering, Model evaluation
+
+---
+
+## 🎨 Use Cases by Resume Section - Sentiment Analysis
+
+### Under "Projects" Section:
+```
+Sentiment Analysis of Google Reviews | Python, ML, Deep Learning          [Month Year]
+• Developed comparative analysis of 6 ML/DL models on 10,700+ Google Play reviews, 
+  achieving 84.79% accuracy with optimized Logistic Regression model
+• Engineered feature extraction pipeline using TF-IDF and Word2Vec embeddings integrated 
+  with custom sentiment lexicons (HowNet, NTUSD, iSGoPaSD)
+• Implemented Bi-LSTM deep learning architecture with Keras achieving 0.93 AUC score, 
+  demonstrating proficiency in sequential neural networks
+```
+
+### Under "Data Science Experience" Section:
+```
+Sentiment Classification Research Project                                   [Month Year]
+Python | scikit-learn | Keras | TensorFlow | NLP
+• Built end-to-end ML pipeline from web scraping through model deployment, processing 
+  10,700+ reviews with comprehensive preprocessing and feature engineering
+• Conducted systematic evaluation of traditional ML vs. deep learning approaches across 
+  multiple metrics (accuracy, precision, recall, F1, ROC-AUC)
+• Published research findings demonstrating traditional ML can match deep learning 
+  performance with proper feature engineering (84.79% vs. 84.58% accuracy)
+```
+
+### Under "Machine Learning Projects" Section:
+```
+Comparative ML/DL Sentiment Analysis | Research Project                    [Month Year]
+• Implemented and compared 6 models (Logistic Regression, SVM, Random Forest, XGBoost, 
+  Naïve Bayes, Bi-LSTM) on real-world Google Play Store review dataset
+• Designed feature engineering pipeline with TF-IDF vectorization, Word2Vec embeddings 
+  (CBOW/Skip-gram), and sentiment dictionary integration
+• Achieved competitive performance across all models (83-85% accuracy range) through 
+  hyperparameter optimization and sampling strategies
+```
+
+---
+
+## 💡 Interview Talking Points - Sentiment Analysis
+
+When discussing this project in interviews, emphasize:
+
+1. **Model Comparison Insight**: "Interestingly, traditional Logistic Regression slightly outperformed the Bi-LSTM deep learning model (84.79% vs 84.58%), demonstrating that proper feature engineering can make simpler models highly competitive."
+
+2. **Feature Engineering**: "I integrated three different sentiment lexicons (HowNet, NTUSD, iSGoPaSD) and compared TF-IDF with Word2Vec embeddings to find the optimal feature representation for this task."
+
+3. **End-to-End Pipeline**: "I built the complete pipeline from web scraping Google Play reviews through data preprocessing, feature engineering, model training, and comprehensive evaluation using multiple metrics."
+
+4. **Practical Trade-offs**: "While the Bi-LSTM had a slightly better AUC score (0.93 vs 0.92), Logistic Regression was faster to train and easier to interpret, making it a better choice for production deployment in this case."
+
+5. **Research Methodology**: "I approached this systematically by evaluating all models on the same dataset with consistent metrics, which allowed for fair comparison and generated research-quality findings."
+
+---
+
+## 🎯 One-Line Summary - Sentiment Analysis
+
+> Comparative sentiment analysis system implementing 6 ML/DL models (Logistic Regression, SVM, XGBoost, Bi-LSTM) on 10,700+ Google Play reviews, achieving 84.79% peak accuracy through optimized feature engineering with TF-IDF, Word2Vec, and custom sentiment lexicons.
+
+---
+
+## 📱 LinkedIn Summary Format - Sentiment Analysis
+
+**Sentiment Analysis: ML vs. Deep Learning Comparative Study**
+
+Developed a comprehensive sentiment classification system for my Data Science research project, comparing traditional machine learning with modern deep learning approaches on real-world Google Play Store reviews.
+
+🔹 Implemented 6 models: Logistic Regression, SVM, Random Forest, XGBoost, Naïve Bayes, and Bi-LSTM
+🔹 Achieved 84.79% accuracy through optimized feature engineering with TF-IDF and Word2Vec
+🔹 Integrated custom sentiment lexicons (HowNet, NTUSD, iSGoPaSD) for enhanced NLP performance
+🔹 Processed 10,700+ reviews with complete data pipeline from scraping to evaluation
+
+**Technical Stack**: Python, scikit-learn, Keras, TensorFlow, NLTK, pandas, Word2Vec, NLP
+
+**Key Finding**: Traditional ML with proper feature engineering can match or exceed deep learning performance on sentiment analysis tasks, while being faster and more interpretable.
+
+**GitHub**: [Link to repository]
+
+---
+
+## 🎓 Academic Context Version - Sentiment Analysis
+
+**Comparative Analysis of ML and Deep Learning for Sentiment Classification (MSC Data Science Research)**
+
+Conducted comprehensive research comparing traditional machine learning and deep learning approaches for sentiment analysis on Google Play Store reviews. The project demonstrated mastery of data science fundamentals including web scraping, data preprocessing, feature engineering (TF-IDF, Word2Vec embeddings), model implementation (scikit-learn, Keras), and rigorous evaluation methodology. Implemented six models spanning classical ML (Logistic Regression, SVM, Random Forest, XGBoost, Naïve Bayes) and deep learning (Bi-LSTM), achieving competitive performance across all approaches (83-85% accuracy range). Key contribution includes demonstrating that traditional ML with proper feature engineering can match deep learning performance while offering advantages in training speed and interpretability. Research findings documented in academic paper format, contributing to understanding of model selection trade-offs in NLP sentiment classification tasks.
+
+---
+
+**Note**: Replace `[Month Year]` with your actual project completion date. The metrics are based on the current repository: https://github.com/grandmaster-01/Sentiment-Analysis-of-Google-Reviews-Using-Machine-Learning-Regressions
