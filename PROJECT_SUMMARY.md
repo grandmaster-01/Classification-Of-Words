@@ -938,3 +938,278 @@ Development Environment:
 ---
 
 **Note**: These pipelines can be converted to visual flowcharts using tools like draw.io, Lucidchart, or mermaid.js for enhanced presentation quality.
+
+---
+---
+
+# 🚀 Distributed Data Pipeline Project - Resume Bullet Points
+
+## Project: Distributed Data Processing Pipeline with Apache PySpark
+
+Below are professional resume bullet points for the **Distributed Data Pipeline** project, formatted in the same style as the previous projects.
+
+---
+
+## 💼 Resume Bullet Points for Distributed Data Pipeline Project
+
+### Big Data & Distributed Computing Focus:
+- **Architected scalable distributed data pipeline** using Apache PySpark to process 20,000+ e-commerce transactions across 5 product categories, demonstrating proficiency in big data frameworks and distributed computing architectures
+- **Implemented end-to-end ETL workflow** including data ingestion from CSV, automated quality validation, schema enforcement, advanced transformations (aggregations, rolling averages, ranking), and optimized data export capabilities
+- **Designed high-performance data processing system** leveraging Spark's in-memory computing and parallel processing to handle large-scale transaction data with fault tolerance and horizontal scalability
+- **Built comprehensive analytics pipeline** integrating Spark SQL for business intelligence queries, customer segmentation with window functions, and real-time data quality checks ensuring 100% data integrity
+
+### Machine Learning & Predictive Analytics Focus:
+- **Developed multi-model ML framework** implementing Linear Regression, Random Forest Regression, and Multi-layer Perceptron Classifier using Spark MLlib for sales prediction and transaction classification tasks
+- **Engineered feature transformation pipeline** including vectorization, feature scaling, and categorical encoding optimized for distributed ML training across Spark cluster nodes
+- **Implemented rigorous model evaluation framework** with cross-validation, hyperparameter tuning, and performance metrics (RMSE, R², accuracy) to optimize predictive model accuracy
+- **Achieved production-ready ML models** with distributed training capability, demonstrating ability to scale machine learning workflows for big data applications
+
+### Data Engineering & ETL Focus:
+- **Built robust data quality framework** with automated validation checks, null handling, duplicate detection, and schema enforcement to ensure data reliability throughout the pipeline
+- **Designed efficient data transformation layer** using PySpark DataFrame API and SQL operations including filtering, aggregation, joins, window functions, and complex analytical queries
+- **Optimized pipeline performance** through partitioning strategies, caching mechanisms, and query optimization techniques reducing processing time by leveraging Spark's lazy evaluation
+- **Implemented data export system** with CSV serialization supporting downstream analytics and business reporting requirements
+
+### Software Engineering & Architecture Focus:
+- **Developed modular, production-ready codebase** using Jupyter Notebook with clear separation of concerns: data ingestion, validation, transformation, analytics, ML training, and visualization layers
+- **Integrated interactive data visualization** using Plotly for exploratory data analysis including distribution plots, time series analysis, and category-wise comparisons enabling data-driven insights
+- **Implemented comprehensive logging and monitoring** throughout pipeline stages for debugging, performance tracking, and operational visibility in distributed environment
+- **Designed scalable architecture** supporting horizontal scaling through Spark's distributed computing model, enabling processing of datasets from thousands to millions of records
+
+### Business Intelligence & Analytics Focus:
+- **Created advanced analytical queries** using Spark SQL to extract business insights including high-value transaction identification, category-wise sales aggregation, and customer ranking/segmentation
+- **Developed customer segmentation strategy** using window functions and ranking algorithms to identify top customers by category and transaction value for targeted marketing initiatives
+- **Built real-time analytics capabilities** for sales trend analysis, rolling average computations, and pattern detection supporting data-driven business decision making
+- **Generated actionable business insights** from 20,000+ transactions across Electronics, Clothing, Home, Sports, and Books categories, demonstrating ability to translate data into business value
+
+---
+
+## 🎯 Short Summary (2-3 Sentences) - Distributed Data Pipeline
+
+Architected a scalable distributed data processing pipeline using Apache PySpark to analyze 20,000+ e-commerce transactions across 5 product categories. Implemented comprehensive ETL workflow with automated data quality validation, advanced analytics using Spark SQL (aggregations, rolling averages, customer segmentation), and machine learning models (Linear Regression, Random Forest, MLP Classifier) for sales prediction and classification. Built interactive visualizations with Plotly and optimized pipeline performance through distributed computing strategies including partitioning, caching, and lazy evaluation.
+
+---
+
+## 📝 Detailed Summary (Paragraph Format) - Distributed Data Pipeline
+
+Engineered a production-grade distributed data processing pipeline leveraging Apache PySpark's distributed computing framework to handle large-scale e-commerce transaction data efficiently. The project demonstrates comprehensive big data engineering skills including ETL workflow design, data quality management, and scalable analytics implementation. Built end-to-end pipeline processing 20,000+ sales transactions with automated validation ensuring data integrity through schema enforcement, null handling, and duplicate detection. Implemented advanced analytical capabilities using Spark SQL for business intelligence queries including high-value transaction filtering, category-wise sales aggregation, rolling average computations, and sophisticated customer segmentation using window functions and ranking algorithms. Developed machine learning components using Spark MLlib, training and evaluating multiple models (Linear Regression, Random Forest Regression, Multi-layer Perceptron Classifier) for sales prediction and transaction classification with comprehensive cross-validation and hyperparameter tuning. Integrated Plotly-based interactive visualizations for exploratory data analysis enabling stakeholders to derive actionable insights from transaction patterns. The architecture leverages Spark's core capabilities including in-memory computing, lazy evaluation, and horizontal scalability to process large datasets efficiently. Designed modular, maintainable code structure with clear separation between data ingestion, transformation, analytics, ML training, and export layers. Key technical achievements include optimizing pipeline performance through strategic caching and partitioning, implementing fault-tolerant distributed processing, and creating reusable analytics components. The project showcases proficiency in big data technologies (Apache Spark, PySpark), distributed computing concepts, data engineering best practices, machine learning workflow design, and ability to deliver scalable solutions for real-world business analytics challenges.
+
+---
+
+## 📊 Key Metrics & Achievements - Distributed Data Pipeline
+
+- ✅ **20,000+ transactions processed** across 5 product categories
+- ✅ **3 ML models implemented**: Linear Regression, Random Forest, MLP Classifier
+- ✅ **100% data quality compliance** through automated validation pipeline
+- ✅ **Distributed computing architecture** with Apache Spark for horizontal scalability
+- ✅ **5+ analytical operations**: Filtering, aggregation, rolling averages, ranking, segmentation
+- ✅ **Interactive visualizations** using Plotly for EDA and business insights
+- ✅ **SQL-based analytics** with Spark SQL for business intelligence queries
+- ✅ **End-to-end pipeline** from data ingestion to ML model deployment and export
+
+---
+
+## 🔧 Technologies & Tools - Distributed Data Pipeline
+
+- **Big Data Framework**: Apache Spark (PySpark)
+- **Data Processing**: Spark DataFrame API, RDD operations
+- **SQL Engine**: Spark SQL
+- **Machine Learning**: Spark MLlib
+- **Visualization**: Plotly (interactive charts)
+- **Programming**: Python 3.7+
+- **Development**: Jupyter Notebook
+- **Data Format**: CSV (input/output)
+- **Runtime**: Java 8/11 (Spark requirement)
+- **Libraries**: pandas, NumPy (supplementary)
+
+---
+
+## 🎨 Use Cases by Resume Section - Distributed Data Pipeline
+
+### Under "Projects" Section:
+```
+Distributed Data Pipeline | Apache PySpark, Big Data, ML                 [Month Year]
+• Architected scalable data pipeline processing 20,000+ e-commerce transactions using 
+  Apache PySpark with distributed computing and fault-tolerant architecture
+• Implemented end-to-end ETL workflow with automated data quality validation, advanced 
+  analytics (aggregations, rolling averages, customer segmentation), and ML models
+• Developed 3 machine learning models (Linear Regression, Random Forest, MLP) using 
+  Spark MLlib with cross-validation and hyperparameter tuning
+```
+
+### Under "Data Engineering Experience" Section:
+```
+Big Data Processing Pipeline                                             [Month Year]
+Apache Spark | PySpark | Spark SQL | MLlib | ETL
+• Built production-ready distributed data pipeline leveraging Spark's in-memory 
+  computing and parallel processing for large-scale transaction analytics
+• Designed robust data quality framework with automated validation, schema enforcement, 
+  and 100% data integrity across pipeline stages
+• Optimized performance through strategic partitioning, caching, and lazy evaluation 
+  reducing processing time for big data workloads
+```
+
+### Under "Big Data Projects" Section:
+```
+E-commerce Analytics Pipeline with Apache Spark                          [Month Year]
+• Engineered distributed ETL pipeline processing 20,000+ transactions across 5 categories 
+  with Spark SQL analytics and customer segmentation using window functions
+• Implemented ML framework with 3 models (Linear/Random Forest Regression, MLP Classifier) 
+  achieving production-ready predictions on distributed architecture
+• Integrated Plotly visualizations for EDA and created scalable architecture supporting 
+  horizontal scaling for millions of records
+```
+
+---
+
+## 💡 Interview Talking Points - Distributed Data Pipeline
+
+When discussing this project in interviews, emphasize:
+
+1. **Distributed Computing Design**: "I architected the pipeline to leverage Spark's distributed computing model, using DataFrame API for optimized parallel processing and lazy evaluation to minimize shuffle operations."
+
+2. **Scalability Strategy**: "The system is designed for horizontal scalability - it can process 20,000 records today but the same code can handle millions by simply adding more cluster nodes without code changes."
+
+3. **Data Quality Engineering**: "I implemented comprehensive data quality checks including schema validation, null handling, and duplicate detection, ensuring 100% data integrity before analytics and ML training."
+
+4. **ML on Distributed Systems**: "Using Spark MLlib, I trained models distributedly across cluster nodes. This approach allows training on datasets too large for single-machine memory."
+
+5. **Performance Optimization**: "I optimized the pipeline using Spark best practices - strategic caching of frequently accessed DataFrames, partitioning for balanced workload distribution, and avoiding unnecessary shuffles."
+
+6. **Business Value**: "The pipeline identifies high-value transactions and top customers per category, directly supporting business decisions like targeted marketing and inventory optimization."
+
+---
+
+## 🎯 One-Line Summary - Distributed Data Pipeline
+
+> Distributed data processing pipeline built with Apache PySpark analyzing 20,000+ e-commerce transactions, featuring automated ETL workflow, Spark SQL analytics, customer segmentation, and ML models (Linear Regression, Random Forest, MLP) for sales prediction with interactive Plotly visualizations.
+
+---
+
+## 📱 LinkedIn Summary Format - Distributed Data Pipeline
+
+**Distributed Data Pipeline: Big Data Analytics with Apache Spark**
+
+Built a production-grade distributed data processing system for my Big Data course, demonstrating scalable analytics on e-commerce transaction data using Apache PySpark.
+
+🔹 Processed 20,000+ transactions with distributed computing architecture
+🔹 Implemented end-to-end ETL: ingestion → validation → analytics → ML → export
+🔹 Developed 3 ML models (Linear Regression, Random Forest, MLP) with Spark MLlib
+🔹 Created SQL-based business intelligence queries for customer segmentation
+🔹 Built interactive visualizations for exploratory data analysis
+
+**Technical Stack**: Apache Spark, PySpark, Spark SQL, Spark MLlib, Python, Plotly, Jupyter Notebook
+
+**Key Insight**: Leveraged Spark's in-memory computing and lazy evaluation to build scalable pipeline that can handle datasets from thousands to millions of records with horizontal scaling.
+
+**GitHub**: https://github.com/[your-username]/distributed-data-pipeline
+
+---
+
+## 🎓 Academic Context Version - Distributed Data Pipeline
+
+**Distributed Data Processing Pipeline with Apache PySpark (Big Data Course Project)**
+
+Developed comprehensive distributed data pipeline demonstrating mastery of big data technologies and distributed computing concepts using Apache Spark framework. The project showcases end-to-end data engineering skills including ETL workflow design, data quality management, scalable analytics implementation, and machine learning on distributed systems. Architected pipeline processing 20,000+ e-commerce sales transactions with automated validation ensuring data integrity, advanced Spark SQL queries for business intelligence (aggregations, rolling averages, customer ranking/segmentation), and machine learning models (Linear Regression, Random Forest, Multi-layer Perceptron) trained distributedly using Spark MLlib. Implemented performance optimizations through partitioning strategies, caching mechanisms, and lazy evaluation leveraging Spark's core capabilities. Integrated interactive visualizations using Plotly for exploratory data analysis and business insights. The project demonstrates understanding of distributed computing principles including fault tolerance, horizontal scalability, data locality, and parallel processing paradigms. Key technical contributions include designing modular architecture with clear separation of concerns, implementing comprehensive logging and monitoring, and creating reusable analytics components following software engineering best practices. Showcases ability to work with big data technologies, design scalable systems, and deliver production-ready solutions for real-world data engineering challenges.
+
+---
+
+## 📈 Pipeline Architecture Details
+
+### Data Flow Overview:
+```
+CSV Data (20K records)
+    ↓
+[SparkSession Init]
+    ↓
+[Data Ingestion] → Schema validation
+    ↓
+[Data Quality Checks] → Null handling, duplicates
+    ↓
+[Transformations] → Filter, aggregate, window functions
+    ↓
+[Analytics Queries] → Spark SQL business intelligence
+    ↓
+[ML Feature Engineering] → Vectorization, scaling
+    ↓
+[Model Training] → Linear Reg, Random Forest, MLP
+    ↓
+[Model Evaluation] → Cross-validation, metrics
+    ↓
+[Visualizations] → Plotly interactive charts
+    ↓
+[Data Export] → CSV output
+```
+
+### Key Pipeline Stages:
+
+**1. Initialization & Configuration**
+- SparkSession setup with optimized configurations
+- Memory allocation and executor tuning
+- Driver and executor resource configuration
+
+**2. Data Ingestion**
+- CSV file reading with schema inference
+- Data type validation and casting
+- Transaction ID, user ID, category, amount, timestamp processing
+
+**3. Data Quality Layer**
+- Schema enforcement (5 columns: transaction_id, user_id, category, amount, timestamp)
+- Null value detection and handling
+- Duplicate transaction removal
+- Data type consistency checks
+
+**4. Analytics & Transformations**
+- **High-value filtering**: Transactions > threshold
+- **Category aggregation**: Sum, avg, count by product category
+- **Rolling averages**: Time-window based computation
+- **Customer ranking**: Window functions with PARTITION BY
+- **Segmentation**: Top customers per category identification
+
+**5. Machine Learning Workflow**
+- **Feature Engineering**: VectorAssembler for feature columns
+- **Data Splitting**: Train/test split (80/20)
+- **Model Training**:
+  - Linear Regression (baseline)
+  - Random Forest Regression (ensemble)
+  - Multi-layer Perceptron Classifier (deep learning)
+- **Hyperparameter Tuning**: Grid search with cross-validation
+- **Evaluation**: RMSE, R², accuracy metrics
+
+**6. Visualization & Insights**
+- Distribution plots by category
+- Time series transaction trends
+- Customer value distribution
+- Category performance comparison
+
+---
+
+## 🔑 Key Technical Achievements
+
+### Distributed Computing Implementation:
+- **Parallelization**: Utilized Spark's distributed processing across cluster nodes
+- **In-memory Computing**: Leveraged Spark's memory-centric architecture for performance
+- **Lazy Evaluation**: Optimized execution plans through transformation chaining
+- **Fault Tolerance**: Implemented resilient distributed datasets (RDD) lineage
+
+### Performance Optimizations:
+- **Caching Strategy**: Cached frequently accessed DataFrames reducing recomputation
+- **Partitioning**: Optimized data distribution for balanced workload
+- **Broadcast Variables**: Efficient small dataset distribution to all nodes
+- **Query Optimization**: Leveraged Catalyst optimizer for SQL query plans
+
+### Data Engineering Best Practices:
+- **Schema Validation**: Strong typing and schema enforcement
+- **Error Handling**: Comprehensive exception management
+- **Logging**: Pipeline stage monitoring and debugging
+- **Modularity**: Reusable components and functions
+
+### Business Analytics Capabilities:
+- **Customer Insights**: Identified top customers per category
+- **Sales Trends**: Category-wise performance analysis
+- **Predictive Analytics**: Sales forecasting with ML models
+- **Segmentation**: Customer grouping for targeted strategies
+
+---
+
+**Note**: Replace `[Month Year]` with your actual project completion date and update GitHub URL placeholders. The project demonstrates Big Data engineering skills with Apache Spark, suitable for Data Engineer, Big Data Engineer, ML Engineer, and Data Scientist roles.
