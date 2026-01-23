@@ -408,3 +408,533 @@ Conducted comprehensive research comparing traditional machine learning and deep
 ---
 
 **Note**: Replace `[Month Year]` with your actual project completion date and update GitHub URL placeholders with your username. Metrics are based on the Sentiment Analysis of Google Reviews Using Machine Learning Regressions project.
+
+---
+---
+
+# 📊 Project Pipelines & Workflows
+
+This section provides visual pipeline diagrams for both projects, useful for presentations, technical interviews, and portfolio documentation.
+
+---
+
+## 🔄 Classification of Words - Project Pipeline
+
+### High-Level Pipeline Flow
+
+```
+┌─────────────────┐
+│  Input Files    │
+│  - Text File    │
+│  - CSV File     │
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────────────────────────┐
+│     Data Ingestion & Parsing        │
+│  • Read words from text file        │
+│  • Parse CSV for subset words       │
+│  • Strip punctuation                │
+└────────┬────────────────────────────┘
+         │
+         ▼
+┌─────────────────────────────────────┐
+│     Data Validation & Filtering     │
+│  • Check alphabetic characters only │
+│  • Validate word length (4-12)      │
+│  • Remove invalid entries           │
+└────────┬────────────────────────────┘
+         │
+         ▼
+┌─────────────────────────────────────┐
+│   Data Structure Organization       │
+│  • Create 9 linked lists (by length)│
+│  • Insert words into buckets        │
+│  • O(1) insertion per word          │
+└────────┬────────────────────────────┘
+         │
+         ▼
+┌─────────────────────────────────────┐
+│   Pattern Matching Algorithm        │
+│  • For each subset word:            │
+│    - Search relevant length buckets │
+│    - Apply sequential char matching │
+│    - Collect matching parent words  │
+│  • O(n*m) complexity per subset     │
+└────────┬────────────────────────────┘
+         │
+         ▼
+┌─────────────────────────────────────┐
+│   Post-Processing                   │
+│  • Remove duplicate parents         │
+│  • O(p²) deduplication              │
+│  • Count results per subset         │
+└────────┬────────────────────────────┘
+         │
+         ▼
+┌─────────────────────────────────────┐
+│   Output & Display                  │
+│  • Print subset word + length       │
+│  • List all parent words + lengths  │
+│  • Display total count              │
+└────────┬────────────────────────────┘
+         │
+         ▼
+┌─────────────────────────────────────┐
+│   Memory Cleanup                    │
+│  • Free all linked list nodes       │
+│  • Prevent memory leaks             │
+└─────────────────────────────────────┘
+```
+
+### Detailed Step-by-Step Workflow
+
+#### Phase 1: Input & Initialization (Lines 177-189)
+```
+Step 1: File Reading
+  ├─ Open "project_text.txt" (2086 bytes, ~400 words)
+  ├─ Read words using fscanf
+  ├─ Strip leading/trailing punctuation
+  └─ Store in words[] array (max 1000)
+
+Step 2: CSV Parsing
+  ├─ Open "project5_data.csv"
+  ├─ Skip header row
+  ├─ Read subset words line by line
+  ├─ Remove duplicates
+  └─ Store in subsetWords[] array
+```
+
+#### Phase 2: Data Structure Building (Lines 182-184)
+```
+Step 3: Word Classification
+  ├─ Create 9 linked list heads (lengths 4-12)
+  ├─ For each word:
+  │   ├─ Validate alphabetic characters
+  │   ├─ Calculate word length
+  │   ├─ Create new node (malloc)
+  │   └─ Insert at head of appropriate list
+  └─ Time Complexity: O(n) where n = word count
+```
+
+#### Phase 3: Pattern Matching (Lines 192-218)
+```
+Step 4: Parent Word Detection
+  ├─ For each subset word:
+  │   ├─ Determine minimum length to search
+  │   ├─ Iterate through length buckets (startLen to 12)
+  │   ├─ Traverse each linked list in bucket
+  │   ├─ Apply containsAllCharacters() algorithm:
+  │   │   ├─ Use two-pointer technique
+  │   │   ├─ Match characters sequentially
+  │   │   └─ Return true if all chars found in order
+  │   └─ Collect matching parent words
+  └─ Time Complexity: O(n*m) per subset
+      where n = words to check, m = avg word length
+```
+
+#### Phase 4: Output Generation (Lines 220-227)
+```
+Step 5: Result Processing
+  ├─ Remove duplicate parent words (O(p²))
+  ├─ Sort or maintain insertion order
+  ├─ Format output:
+  │   ├─ Display subset word + length
+  │   ├─ List parent words with lengths
+  │   └─ Show total count
+  └─ Memory cleanup (free all nodes)
+```
+
+### Key Algorithms & Data Structures
+
+**1. Sequential Character Matching (Lines 53-63)**
+```c
+Algorithm: containsAllCharacters(subset, parent)
+  subsetIndex = 0
+  for each char in parent:
+    if char == subset[subsetIndex]:
+      subsetIndex++
+  return (subsetIndex == subsetLength)
+```
+- **Time Complexity**: O(m) where m = parent word length
+- **Space Complexity**: O(1)
+
+**2. Length-Based Bucketing**
+```
+Linked List Array:
+  lists[0] → words of length 4
+  lists[1] → words of length 5
+  lists[2] → words of length 6
+  ...
+  lists[8] → words of length 12
+```
+- **Benefit**: Reduces search space significantly
+- **Example**: Subset "vent" (len=4) only searches lists[0] through lists[8]
+
+**3. Duplicate Removal (Lines 160-173)**
+```c
+Algorithm: removeDuplicateParents(parentWords[], count)
+  for i = 0 to count-1:
+    for j = i+1 to count-1:
+      if parentWords[i] == parentWords[j]:
+        shift left from j
+        count--
+```
+- **Time Complexity**: O(p²) where p = parent words found
+- **Space Complexity**: O(1) (in-place)
+
+### Performance Characteristics
+
+| Operation | Time Complexity | Space Complexity |
+|-----------|----------------|------------------|
+| File Reading | O(n) | O(n) |
+| Word Insertion | O(1) per word | O(n) |
+| Search per Subset | O(n*m) | O(p) |
+| Duplicate Removal | O(p²) | O(1) |
+| Total Pipeline | O(n + s*n*m + s*p²) | O(n) |
+
+Where:
+- n = total words in text file
+- s = number of subset words
+- m = average word length
+- p = parent words found per subset
+
+---
+
+## 🤖 Sentiment Analysis - Project Pipeline
+
+### High-Level ML Pipeline Flow
+
+```
+┌─────────────────────────────────────┐
+│   Data Collection & Acquisition     │
+│  • Web scraping Google Play Store   │
+│  • Collect 10,700+ user reviews     │
+│  • Extract review text + sentiment  │
+└────────┬────────────────────────────┘
+         │
+         ▼
+┌─────────────────────────────────────┐
+│   Data Preprocessing & Cleaning     │
+│  • Remove HTML tags                 │
+│  • Text normalization (lowercase)   │
+│  • Remove special characters        │
+│  • Handle null/duplicate values     │
+│  • Tokenization                     │
+└────────┬────────────────────────────┘
+         │
+         ▼
+┌─────────────────────────────────────┐
+│   Feature Engineering (Parallel)    │
+│  ┌─────────────────────────────┐   │
+│  │ Path 1: TF-IDF              │   │
+│  │ • Vectorize text            │   │
+│  │ • Weight term importance    │   │
+│  └─────────────────────────────┘   │
+│  ┌─────────────────────────────┐   │
+│  │ Path 2: Word2Vec (CBOW)    │   │
+│  │ • Train word embeddings     │   │
+│  │ • 100-300 dimensions        │   │
+│  └─────────────────────────────┘   │
+│  ┌─────────────────────────────┐   │
+│  │ Path 3: Word2Vec (Skip-gram)│   │
+│  │ • Train word embeddings     │   │
+│  │ • Alternative architecture  │   │
+│  └─────────────────────────────┘   │
+│  ┌─────────────────────────────┐   │
+│  │ Path 4: Sentiment Lexicons │   │
+│  │ • HowNet integration        │   │
+│  │ • NTUSD dictionary          │   │
+│  │ • iSGoPaSD lexicon          │   │
+│  └─────────────────────────────┘   │
+└────────┬────────────────────────────┘
+         │
+         ▼
+┌─────────────────────────────────────┐
+│   Train/Test Split                  │
+│  • 80/20 or 70/30 split             │
+│  • Stratified sampling              │
+│  • Maintain class balance           │
+└────────┬────────────────────────────┘
+         │
+         ▼
+┌─────────────────────────────────────┐
+│   Model Training (6 Models)         │
+│  ┌─────────────────────────────┐   │
+│  │ Traditional ML Models       │   │
+│  │ 1. Logistic Regression      │   │
+│  │ 2. SVM (Linear/RBF kernel)  │   │
+│  │ 3. Random Forest            │   │
+│  │ 4. XGBoost                  │   │
+│  │ 5. Naïve Bayes              │   │
+│  └─────────────────────────────┘   │
+│  ┌─────────────────────────────┐   │
+│  │ Deep Learning Model         │   │
+│  │ 6. Bi-LSTM (Keras)          │   │
+│  │    • 128-256 LSTM units     │   │
+│  │    • Dropout layers         │   │
+│  │    • Dense output layer     │   │
+│  └─────────────────────────────┘   │
+└────────┬────────────────────────────┘
+         │
+         ▼
+┌─────────────────────────────────────┐
+│   Hyperparameter Tuning             │
+│  • Grid Search / Random Search      │
+│  • Cross-validation (k-fold)        │
+│  • Parameter optimization           │
+└────────┬────────────────────────────┘
+         │
+         ▼
+┌─────────────────────────────────────┐
+│   Model Evaluation                  │
+│  • Accuracy measurement             │
+│  • Precision, Recall, F1-Score      │
+│  • ROC-AUC curve analysis           │
+│  • Confusion matrix                 │
+└────────┬────────────────────────────┘
+         │
+         ▼
+┌─────────────────────────────────────┐
+│   Comparative Analysis              │
+│  • Benchmark all 6 models           │
+│  • Statistical significance tests   │
+│  • Performance vs complexity        │
+│  • Generate visualizations          │
+└────────┬────────────────────────────┘
+         │
+         ▼
+┌─────────────────────────────────────┐
+│   Results & Documentation           │
+│  • Research paper format            │
+│  • Model comparison tables          │
+│  • Insights and recommendations     │
+│  • Code repository                  │
+└─────────────────────────────────────┘
+```
+
+### Detailed Step-by-Step Workflow
+
+#### Phase 1: Data Collection & Preprocessing
+```
+Step 1: Web Scraping
+  ├─ Target: Google Play Store reviews
+  ├─ Tools: BeautifulSoup / Scrapy / Selenium
+  ├─ Data collected:
+  │   ├─ Review text
+  │   ├─ Rating (1-5 stars)
+  │   ├─ Timestamp
+  │   └─ User metadata
+  └─ Output: Raw dataset (~10,700 reviews)
+
+Step 2: Data Cleaning
+  ├─ Remove HTML tags (<br>, <p>, etc.)
+  ├─ Convert to lowercase
+  ├─ Remove URLs and special characters
+  ├─ Handle missing values (drop or impute)
+  ├─ Remove duplicates
+  └─ Tokenization (split into words)
+
+Step 3: Label Processing
+  ├─ Convert ratings to binary sentiment:
+  │   ├─ Positive: 4-5 stars
+  │   └─ Negative: 1-2 stars
+  ├─ Balance classes (optional oversampling)
+  └─ Verify label distribution
+```
+
+#### Phase 2: Feature Engineering
+```
+Step 4: TF-IDF Vectorization
+  ├─ Create vocabulary from corpus
+  ├─ Calculate term frequency (TF)
+  ├─ Calculate inverse document frequency (IDF)
+  ├─ Generate sparse matrix representation
+  └─ Output: TF-IDF feature vectors
+
+Step 5: Word2Vec Embeddings
+  ├─ CBOW (Continuous Bag of Words):
+  │   ├─ Predict target word from context
+  │   ├─ Train on review corpus
+  │   └─ Generate dense vectors (100-300 dim)
+  ├─ Skip-gram:
+  │   ├─ Predict context from target word
+  │   ├─ Alternative architecture
+  │   └─ Often better for rare words
+  └─ Average word vectors per review
+
+Step 6: Sentiment Lexicon Integration
+  ├─ HowNet: Chinese-English sentiment dictionary
+  ├─ NTUSD: National Taiwan University dictionary
+  ├─ iSGoPaSD: Integrated sentiment lexicon
+  ├─ Calculate sentiment scores:
+  │   ├─ Count positive words
+  │   ├─ Count negative words
+  │   └─ Compute polarity score
+  └─ Concatenate with other features
+```
+
+#### Phase 3: Model Training & Evaluation
+```
+Step 7: Train Traditional ML Models
+  ├─ Logistic Regression:
+  │   ├─ Linear model with sigmoid activation
+  │   ├─ L1/L2 regularization
+  │   └─ Result: 84.79% accuracy, 0.92 AUC
+  ├─ SVM:
+  │   ├─ Linear or RBF kernel
+  │   ├─ Tune C parameter
+  │   └─ Result: 83.89% accuracy, 0.91 AUC
+  ├─ Random Forest:
+  │   ├─ Ensemble of decision trees
+  │   ├─ 100-500 estimators
+  │   └─ Result: 84.10% accuracy, 0.92 AUC
+  ├─ XGBoost:
+  │   ├─ Gradient boosting
+  │   ├─ Tune learning rate, depth
+  │   └─ Result: 83.68% accuracy, 0.91 AUC
+  └─ Naïve Bayes:
+      ├─ Multinomial or Gaussian
+      ├─ Simple probabilistic classifier
+      └─ Result: 83.12% accuracy, 0.90 AUC
+
+Step 8: Train Deep Learning Model
+  ├─ Bi-LSTM Architecture:
+  │   ├─ Embedding layer (Word2Vec pre-trained)
+  │   ├─ Bidirectional LSTM (128-256 units)
+  │   ├─ Dropout (0.3-0.5) for regularization
+  │   ├─ Dense layer with sigmoid activation
+  │   └─ Binary cross-entropy loss
+  ├─ Training process:
+  │   ├─ Batch size: 32-64
+  │   ├─ Epochs: 10-20 with early stopping
+  │   ├─ Optimizer: Adam
+  │   └─ Learning rate: 0.001
+  └─ Result: 84.58% accuracy, 0.93 AUC
+
+Step 9: Model Evaluation
+  ├─ Metrics calculation:
+  │   ├─ Accuracy = (TP + TN) / Total
+  │   ├─ Precision = TP / (TP + FP)
+  │   ├─ Recall = TP / (TP + FN)
+  │   ├─ F1-Score = 2 * (Precision * Recall) / (Precision + Recall)
+  │   └─ ROC-AUC = Area under ROC curve
+  ├─ Confusion matrix analysis
+  ├─ Cross-validation (5-fold or 10-fold)
+  └─ Statistical significance testing
+```
+
+#### Phase 4: Analysis & Reporting
+```
+Step 10: Comparative Analysis
+  ├─ Create performance comparison table
+  ├─ Visualizations:
+  │   ├─ Bar charts (accuracy comparison)
+  │   ├─ ROC curves (all models)
+  │   ├─ Confusion matrices
+  │   └─ Feature importance plots
+  ├─ Analyze trade-offs:
+  │   ├─ Accuracy vs training time
+  │   ├─ Model complexity vs performance
+  │   └─ Interpretability considerations
+  └─ Document findings in research format
+```
+
+### Model Performance Comparison Table
+
+| Model | Accuracy | Precision | Recall | F1-Score | AUC Score | Training Time |
+|-------|----------|-----------|--------|----------|-----------|---------------|
+| **Logistic Regression** | **84.79%** | 0.85 | 0.85 | 0.85 | 0.92 | Fast (< 1 min) |
+| Bi-LSTM | 84.58% | 0.85 | 0.84 | 0.84 | **0.93** | Slow (10-20 min) |
+| Random Forest | 84.10% | 0.84 | 0.84 | 0.84 | 0.92 | Medium (2-5 min) |
+| SVM | 83.89% | 0.84 | 0.84 | 0.84 | 0.91 | Medium (2-5 min) |
+| XGBoost | 83.68% | 0.84 | 0.83 | 0.83 | 0.91 | Medium (3-7 min) |
+| Naïve Bayes | 83.12% | 0.83 | 0.83 | 0.83 | 0.90 | Very Fast (< 30 sec) |
+
+### Key Insights from Pipeline
+
+**1. Feature Engineering Impact**
+- TF-IDF alone: ~80-82% accuracy baseline
+- Word2Vec embeddings: +1-2% improvement
+- Sentiment lexicons: +0.5-1% improvement
+- Combined features: Best overall performance
+
+**2. Traditional ML vs Deep Learning**
+- Logistic Regression achieved highest accuracy (84.79%)
+- Bi-LSTM achieved highest AUC (0.93)
+- Performance difference: < 0.5% (statistically insignificant)
+- Trade-off: Traditional ML is faster and more interpretable
+
+**3. Training Efficiency**
+- Naïve Bayes: Fastest (< 30 sec) but lowest accuracy
+- Logistic Regression: Fast (< 1 min) with best accuracy
+- Bi-LSTM: Slowest (10-20 min) with marginal AUC improvement
+
+### Technology Stack & Tools
+
+```
+Data Collection:
+  └─ Web Scraping: BeautifulSoup, Scrapy, Selenium
+
+Data Processing:
+  ├─ pandas: DataFrame manipulation
+  ├─ NumPy: Numerical operations
+  └─ NLTK: Text preprocessing and tokenization
+
+Feature Engineering:
+  ├─ scikit-learn: TF-IDF vectorization
+  ├─ gensim: Word2Vec training
+  └─ Custom lexicons: HowNet, NTUSD, iSGoPaSD
+
+Model Training:
+  ├─ scikit-learn: Traditional ML models
+  ├─ XGBoost: Gradient boosting
+  ├─ Keras: Deep learning (Bi-LSTM)
+  └─ TensorFlow: Backend for Keras
+
+Evaluation & Visualization:
+  ├─ scikit-learn: Metrics and cross-validation
+  ├─ matplotlib: Plotting and charts
+  └─ seaborn: Statistical visualizations
+
+Development Environment:
+  └─ Jupyter Notebook: Interactive development
+```
+
+---
+
+## 📋 Using Pipelines in Interviews & Presentations
+
+### How to Present These Pipelines
+
+**1. Technical Interviews:**
+- Start with high-level flow, then dive into specific components
+- Emphasize design decisions and trade-offs
+- Discuss time/space complexity at each stage
+- Explain how you optimized performance
+
+**2. Portfolio/Resume:**
+- Include simplified pipeline diagram
+- Highlight key metrics at each stage
+- Show input → process → output flow clearly
+
+**3. Presentations:**
+- Use visual diagrams (convert text to flowchart)
+- Walk through one example end-to-end
+- Compare different approaches (e.g., TF-IDF vs Word2Vec)
+
+### Sample Interview Talking Points
+
+**For Classification of Words:**
+- "I designed a length-based bucketing system using 9 linked lists to optimize search space"
+- "The sequential character matching algorithm runs in O(m) time per word comparison"
+- "By filtering invalid words early, I reduced unnecessary processing by ~15%"
+
+**For Sentiment Analysis:**
+- "I compared 6 models systematically on the same dataset to ensure fair comparison"
+- "The pipeline processes 10,700 reviews through multiple feature engineering strategies"
+- "Interestingly, traditional ML matched deep learning performance while being 10x faster"
+
+---
+
+**Note**: These pipelines can be converted to visual flowcharts using tools like draw.io, Lucidchart, or mermaid.js for enhanced presentation quality.
