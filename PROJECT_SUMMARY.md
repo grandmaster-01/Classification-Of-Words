@@ -27,8 +27,8 @@ Engineered a comprehensive word classification and pattern matching system in C 
 Choose the most relevant bullets for your resume based on the job description:
 
 ### Technical Implementation Focus:
-- **Designed and implemented a word classification system in C** utilizing linked list data structures to organize 1000+ words by length, enabling efficient O(1) insertion and O(n) search operations
-- **Developed sequential character matching algorithm** to identify parent-child word relationships, processing text files with custom pattern matching logic achieving O(n*m) time complexity
+- **Designed and implemented a word classification system in C** utilizing linked list data structures to organize 1000+ words by length, enabling efficient O(1) insertion and O(n) search per length bucket
+- **Developed sequential character matching algorithm** to identify parent-child word relationships, processing text files with custom pattern matching logic achieving O(n*m) time complexity (where n is the number of words and m is the average word length)
 - **Engineered robust file I/O system** with CSV parsing, text file processing, and data validation including punctuation stripping and alphabetic-only filtering
 - **Implemented dynamic memory management** using malloc/free with proper error handling, preventing memory leaks in a production-quality C application
 
@@ -64,7 +64,7 @@ Implemented a C-based application demonstrating mastery of fundamental computer 
 
 ### Algorithms:
 - **Pattern Matching**: Sequential character containment algorithm
-- **Duplicate Removal**: O(n²) comparison-based deduplication (where n is the number of parent words found)
+- **Duplicate Removal**: O(p²) nested loop comparison (where p is the number of parent words found)
 - **String Processing**: Parsing, validation, and character manipulation
 
 ### Software Engineering:
