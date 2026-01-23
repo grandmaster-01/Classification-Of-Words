@@ -395,7 +395,7 @@ Developed a comprehensive sentiment classification system for my Data Science re
 
 **Key Finding**: Traditional ML with proper feature engineering can match or exceed deep learning performance on sentiment analysis tasks, while being faster and more interpretable.
 
-**GitHub**: [Link to repository]
+**GitHub**: https://github.com/[your-username]/sentiment-analysis-project
 
 ---
 
@@ -407,4 +407,4 @@ Conducted comprehensive research comparing traditional machine learning and deep
 
 ---
 
-**Note**: Replace `[Month Year]` with your actual project completion date. The metrics are based on the current repository: https://github.com/grandmaster-01/Sentiment-Analysis-of-Google-Reviews-Using-Machine-Learning-Regressions
+**Note**: Replace `[Month Year]` with your actual project completion date and update GitHub URL placeholders with your username. Metrics are based on the Sentiment Analysis of Google Reviews Using Machine Learning Regressions project.
