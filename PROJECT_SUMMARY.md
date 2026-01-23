@@ -12,7 +12,7 @@ This document provides professionally-crafted summaries of the **Classification 
 
 ## 🎯 Short Summary (2-3 Sentences)
 
-Developed a word processing application in C that classifies words by length using linked list data structures and identifies parent-child word relationships through sequential character matching. The system processes text files and CSV data to efficiently search for words containing specific character sequences in order. Implemented optimized algorithms achieving O(n*m) time complexity for pattern matching across thousands of words.
+Developed a word processing application in C that classifies words by length using linked list data structures and identifies parent-child word relationships through sequential character matching. The system processes text files and CSV data to efficiently search for words containing specific character sequences in order. Implemented optimized algorithms achieving O(n*m) time complexity (where n is the number of words and m is the average word length) for pattern matching across thousands of words.
 
 ---
 
@@ -64,7 +64,7 @@ Implemented a C-based application demonstrating mastery of fundamental computer 
 
 ### Algorithms:
 - **Pattern Matching**: Sequential character containment algorithm
-- **Duplicate Removal**: O(n²) comparison-based deduplication
+- **Duplicate Removal**: O(n²) comparison-based deduplication (where n is the number of parent words found)
 - **String Processing**: Parsing, validation, and character manipulation
 
 ### Software Engineering:
@@ -167,7 +167,7 @@ Developed a comprehensive word classification and pattern matching application i
 - **Language**: C
 - **Project Type**: Data Structures & Algorithms
 - **Complexity**: Intermediate
-- **Lines of Code**: ~250+
+- **Lines of Code**: 260
 - **Key Features**: Linked Lists, Pattern Matching, File I/O, Memory Management
 
 ### What I Learned:
